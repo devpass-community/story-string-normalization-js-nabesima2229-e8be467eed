@@ -1,5 +1,5 @@
 function removeAccent(str) {
-    // Add your solution here!
+    return str.normalize('NFD').replace(/\p{Mn}/gu, "")
 }
 
 module.exports = removeAccent;
